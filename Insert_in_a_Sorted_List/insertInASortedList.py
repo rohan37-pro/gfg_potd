@@ -1,7 +1,10 @@
+
+
 class Solution:
     def sortedInsert(self, head1,key):
         current = head1
         added = 0
+        
         if current.data:
             if current.data > key:
                 new_node = Node(key)
