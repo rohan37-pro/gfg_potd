@@ -2,12 +2,13 @@
 class Solution:
     def sumOfDivisors(self, N):
         sum = 0
-        for i in range(1, N+1):
-            for j in range(1, int(i**0.5)+1):
-                if i%j==0:
-                    sum += j
-                    if j != (i//j):
-                        sum += i//j
+
+        # Iterating from 1 to N.
+        for i in range(1, N + 1):
+            # Calculating and accumulating the sum of divisors.
+            sum += (N // i) * i
+
+        # Returning the sum of divisors.
         return sum
 
 
