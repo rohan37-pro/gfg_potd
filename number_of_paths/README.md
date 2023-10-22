@@ -7,7 +7,6 @@ The problem is to count all the possible paths from top left to bottom right of 
 Return answer modulo 109+7.
 
 Example 1:
-
 Input:
 M = 3 and N = 3
 Output: 6
@@ -21,8 +20,9 @@ The possible paths which exists to reach
 'I' from 'A' following above conditions 
 are as follows:ABCFI, ABEHI, ADGHI, ADEFI, 
 ADEHI, ABEFI
-Example 2:
 
+
+Example 2:
 Input:
 M = 1 and N = 4
 Output: 1
