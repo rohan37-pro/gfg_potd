@@ -7,3 +7,5 @@ class Solution:
             n = n//9
         return nth
 
+obj = Solution()
+print(obj.findNth(10))
