@@ -1,5 +1,7 @@
-Palindrome Linked List
-Difficulty: MediumAccuracy: 41.48%Submissions: 328K+Points: 4
+# Palindrome Linked List
+
+
+Difficulty: Medium
 Given a singly linked list of integers. The task is to check if the given linked list is palindrome or not.
 
 Examples:
