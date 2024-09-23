@@ -16,4 +16,11 @@
 
 class Solution:
     def isPalindrome(self, head):
-        pass
+        pal = []
+        while head:
+            pal.append(head.data)
+            head = head.next
+        if pal==pal[-1::-1]:
+            return True
+        else:
+            return False
