@@ -20,7 +20,13 @@ class Solution:
         while head:
             pal.append(head.data)
             head = head.next
-        if pal==pal[-1::-1]:
-            return True
+        l = len(pal)//2
+        i = 0
+        j = -1
+        while i<l:
+            if pal[i]!= pal[j]:
+                return False
+            i+=1
+            j-=1
         else:
-            return False
+            return True
