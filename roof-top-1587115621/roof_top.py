@@ -10,8 +10,10 @@ class Solution:
         for i in arr[1:]:
             if i>elem:
                 Current+=1
-                maximum = max(maximum, Current)
+                if Current> maximum:
+                    maximum = Current
             else:
                 Current = 0
             elem = i
         return maximum
+        
