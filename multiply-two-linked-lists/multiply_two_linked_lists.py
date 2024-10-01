@@ -12,4 +12,16 @@ class node:
 
 class Solution:
     def multiply_two_lists(self, first, second):
-        # Code here
+        mod = 1000000007
+        num1 = ''
+        while first:
+            num1 += str(first.data)
+            first = first.next
+            num1 = str(int(num1)%mod)
+        num2 = ''
+        while second:
+            num2 += str(second.data)
+            second = second.next
+            num2 = str(int(num2)%mod)
+        
+        return (int(num1) * int(num2)) % mod
