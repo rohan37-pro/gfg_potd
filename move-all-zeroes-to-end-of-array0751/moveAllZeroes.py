@@ -48,4 +48,16 @@ class Solution:
 					arr[i], arr[j] = arr[j], 0
 				i+=1
 				
-			
+
+# this solution takes 0.81sec of runtime time complexity O(n)
+class Solution:
+	def pushZerosToEnd(self,arr):
+		ptr = 0
+		n = len(arr)
+		for i in range(n):
+			if arr[i]!=0:
+				arr[ptr] = arr[i]
+				ptr +=1
+		while ptr<n:
+			arr[ptr]=0
+			ptr+=1
