@@ -30,3 +30,22 @@ class Solution:
 				i+=1
 		for i in range(zero):
 			arr.append(0)
+
+
+# this solution runs in 0.61sec.. time complexity O(n) space complexity O(1)
+class Solution:
+	def pushZerosToEnd(self,arr):
+		i = 0
+		n = len(arr)
+		while i<n and arr[i]!=0:
+			i+=1
+		j = i
+		while i< n and j<n:
+			if arr[i]==0:
+				while j<n and arr[j]==0:
+					j+=1
+				if j<n:
+					arr[i], arr[j] = arr[j], 0
+				i+=1
+				
+			
